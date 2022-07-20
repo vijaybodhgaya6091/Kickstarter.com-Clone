@@ -16,6 +16,7 @@
 }
 body {
   background-color: rgb(248, 246, 246);
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 
@@ -38,7 +39,7 @@ form {
         display:grid;
         grid-template-columns: repeat(7,14.28%);
         grid-template-rows: repeat(1,50px);
-       
+       background-color: white;
     }
 
     #navbar>div{
@@ -83,7 +84,7 @@ form {
    #log
    {
     color:white;
-    background-color: rgb(6, 65, 6);
+    background-color: rgba(11, 167, 89, 0.664);
     border: 0px solid;
    }
 
@@ -120,7 +121,84 @@ form {
     margin:auto;
 }
 
+#apple{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 7px;
+}
 
+#facebook{
+    background-color: rgb(115, 115, 209);
+    color: white;
+    font-weight: 200;
+    border: 0px;
+}
+
+#reading{
+    color:rgb(170, 167, 167);
+}
+
+#read{
+    color: rgb(115, 115, 209);
+    margin-bottom: 20px;
+}
+
+#second
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#second>p>a{
+    color: rgb(115, 115, 209);
+    text-decoration: none;
+}
+
+#last{
+    margin:20px;
+}
+
+#last>p{
+    color:rgb(170, 167, 167);
+}
+
+#last>p>a{
+    color: rgb(115, 115, 209);  
+}
+
+#secondlast{
+        display:grid;
+        grid-template-columns: repeat(10,10%);
+        grid-template-rows: repeat(1,50px);
+       background-color: white;
+       text-align: center;
+    }
+
+    #secondlast>div{
+        padding:20px 5px 40px 5px;
+        
+    }
+ 
+ #bottom
+ {
+        display:grid;
+        grid-template-columns: repeat(3,25%);
+        grid-template-rows: auto;
+       background-color: white;
+       margin:20px;
+       justify-content: space-around;
+ }
+
+ #bottom>div>h4{
+    color:black;
+    margin-bottom: 10px;
+ }
+
+ hr{
+    margin-top:5px;
+ }
 </style>
 
 <body>
@@ -148,8 +226,73 @@ form {
         </div>
         
         <p id="or">or</p>
-        
+        <input type="submit" value="Sign in with Apple" id="apple">
+        <input type="submit" value="Continue with Facebook" id="facebook">
+        <p id="reading">Get notified when your friends back and launch projects. We'll never post anything on Facebook without your permission.</reading>
+        <p id="read">Read more</p>
+
+        <hr>
+
+        <div id="second">
+            <p>New to Kickstarter? <a href="C:\Users\vijay_000\humane-governor-8062\Signup.html">Sign up</a></p>  
+        </div>
+
+        <hr>
+
+        <div id="last">
+            <p>This site is protected by reCAPTCHA and the Google <a>Privacy Policy</a> and <a>Terms of Service</a> apply</p>  
+        </div>
+
+
     </form>
+
+    <hr>
+
+    <div id="secondlast">
+        <div>Arts</div>
+        <div>Comics & Illustration</div>
+        <div>Design & Tech</div>
+        <div>Film</div>
+        <div>Food & Craft</div>
+        <div>Games</div>
+        <div>Music</div>
+        <div>Publishing</div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <hr>
+
+    <div id="bottom">
+        <div>
+         <h4>ABOUT</h4>
+         <p>About us</p>
+         <p>Our charter</p>
+         <p>Stats</p>
+         <p>Press</p>
+         <p>Jobs</p>
+        </div>
+
+        <div>
+            <h4>SUPPORT</h4>
+            <p>Help Centers</p>
+            <p>Our Rules</p>
+            <p>creator Resources</p>
+            <p>Forward Funds</p>
+            <p>Brand assests</p>
+        </div>
+
+        <div>
+            <h4>MORE FROM KICKSTARTER</h4>
+            <p>Newsletters</p>
+            <p>Kickstarter Magzine</p>
+            <p>The Creative Independent</p>
+            <p>The Kickstarter Blog</p>
+            <p>Mobile apps</p>
+            <p>Research</p>
+        </div>
+
+    </div>
    
 </body>
 <script>
