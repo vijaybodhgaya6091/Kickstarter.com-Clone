@@ -302,7 +302,20 @@ form {
    
 </body>
 <script>
+document.querySelector("form").addEventListener("submit",signingup);
+   let arr=JSON.parse(localStorage.getItem("list"))||[];  
 
+            function signingup(){
+             event.preventDefault();
+             let obj={
+            personname:document.querySelector("#name").value,
+            personemail:document.querySelector("#email").value,
+            personpassword:document.querySelector("#password").value,
+          
+          }
+          arr.push(obj);
+          localStorage.setItem("list",JSON.stringify(arr));
+    }
 
 
 
