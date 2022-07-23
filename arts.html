@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     
-    <title>Homepage</title>
+    <title>Arts</title>
 </head>
 <style>
     #navbar{
@@ -59,9 +59,14 @@
         
     }
 
+    #two>div>a{
+        text-decoration: none;
+        color:black;
+    }
+
     h1{
         margin-top: 30px;
-        margin-left: 30px;
+        margin-left: 0px;
     }
 
     #kick{
@@ -72,6 +77,9 @@
     #kick2{
         color:blue;
         margin-left: 30px;
+        display:grid;
+        grid-template-columns: repeat(4,160px);
+        grid-template-rows: auto;
     }
 
     #three{
@@ -166,30 +174,7 @@
         grid-template-columns: repeat(1,100%);
         grid-template-rows: 25px 25px 25px; 
     }
-    #four{
-        display:grid;
-        grid-template-columns: repeat(2,50%);
-        grid-template-rows: auto;
-        margin-top: 50px; 
-        margin-bottom: 50px;
-    }
-
-    #four>div{
-        margin-left: 30px;
-        text-align: left;
-    }
-
-    #four>div>h1{
-        text-align: left;
-    }
-
-    #four>div>img{
-        width:100%;
-    }
-
-    #four>div>p+p{
-        color:blue;
-    }
+   
 
     #fresh{
         margin-top: 50px;
@@ -201,6 +186,32 @@
     #fresh>a{
      color:blue;
     }
+
+    #four{
+        display:grid;
+        grid-template-columns: repeat(4,22%);
+        grid-template-rows: auto;
+        justify-content: space-evenly;
+        margin-top: 50px; 
+        margin-bottom: 50px; 
+  }
+
+  #four>div>img{
+    width:100%;
+  }
+
+  #four>div>h5{
+    color:grey;
+    text-align: left;
+  }
+
+  #four>div>h3{
+    text-align: left;
+  }
+
+  #four>div>p{
+    text-align: left;
+  }
 
     #five{
         display:grid;
@@ -228,7 +239,7 @@
     }
   
 
-  #six{
+    #six{
         display:grid;
         grid-template-columns: repeat(4,22%);
         grid-template-rows: auto;
@@ -282,6 +293,33 @@
 
   #eight{
         display:grid;
+        grid-template-columns: repeat(2,50%);
+        grid-template-rows: auto;
+        margin-top: 50px; 
+        margin-bottom: 50px;
+    }
+
+    #eight>div{
+        margin-left: 30px;
+        text-align: left;
+    }
+
+    #eight>div>h1{
+        text-align: left;
+    }
+
+    #eight>div>img{
+        width:100%;
+        height:250px;
+    }
+
+    #eight>div>p+p{
+        color:blue;
+    }
+
+
+    #nine{
+        display:grid;
         grid-template-columns: repeat(4,22%);
         grid-template-rows: auto;
         justify-content: space-evenly;
@@ -289,15 +327,25 @@
         margin-bottom: 50px; 
   }
 
-  #eight>div>img{
+  #nine>div>img{
     width:100%;
-    height:250px;
   }
 
-    #eight>div>p{
+  #nine>div>h5{
+    color:grey;
     text-align: left;
   }
 
+  #nine>div>h3{
+    text-align: left;
+  }
+
+  #nine>div>p{
+    text-align: left;
+  }
+  
+
+  
   #secondlast{
         display:grid;
         grid-template-columns: repeat(10,10%);
@@ -321,7 +369,8 @@
        justify-content: space-around;
  }
 
- #bottom>div>h4{
+ #bottom>div>h4
+ {
     color:black;
     margin-bottom: 10px;
  }
@@ -341,7 +390,7 @@
 
     <div id="two">
         <div></div>
-        <div>Arts</div>
+        <div><a href="C:\Users\vijay_000\humane-governor-8062\arts.html">Arts</a></div>
         <div>Comics & Illustration</div>
         <div>Design & Tech</div>
         <div>Film</div>
@@ -356,7 +405,12 @@
 
     <h1>Arts</h1>
     <p id="kick">Discover the artists and organizations using Kickstarter to realize ambitious projects in visual art and performance.</p>
-    <div id="kick2">Explore Arts     Explore Dance     Explore Photography     Explore Theater</p>
+    <div id="kick2">
+        <div>Explore Arts</div>  
+        <div>Explore Dance</div>     
+        <div>Explore Photography</div>     
+        <div>Explore Theater</div>
+    </div>
     
 
 
@@ -365,10 +419,10 @@
     <div id="three">
      <div id="three1">
        <p>FEATURED PROJECT</p>
-       <img src="https://ksr-ugc.imgix.net/assets/037/247/334/d0d6c8d73d9cd3d536b1ac01f6e35b9a_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1652127745&auto=format&frame=1&q=92&s=c3cd577834ea78f7b82bf41c44f09a1a"/>
-       <h1>Bi Visibility: Still Bi</h1>
-       <p id="a96">A 96-page graphic novel anthology all about Bisexuality</p>
-       <h5>By Kathryn Calamia</h5>
+       <img src="https://ksr-ugc.imgix.net/assets/037/451/593/050698d4f8296dd522c657f2c4778bc7_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1653622665&auto=format&frame=1&q=92&s=8ab0374e33b1912893a37ba7e236deaa"/>
+       <h1>Jade: The Quarterlife Crisis</h1>
+       <p id="a96">A mini audio drama series created by East & Southeast Asian independent artists.</p>
+       <h5>By Victoria Chen</h5>
     </div>
 
    
@@ -376,12 +430,12 @@
         <p>RECOMMENDED FOR YOU</p>
        <div id="three21">
         <div id="three21a">
-         <img src="https://imageio.forbes.com/specials-images/imageserve/62b2e68be8aae0c2eb988c7e/NuraTrue-Pro-Front/960x0.jpg?format=jpg&width=960"/>
+         <img src="https://images.squarespace-cdn.com/content/v1/5890f124db29d6451a48f268/1488647478512-X9BJ4EQ5KTBQYEFX0ROT/1+MikeandSheilaForbesAliciaBruce.jpg?format=1500w"/>
         </div>
         <div id="three21b">
-            <p>NuraTrue Pro - Wireless Earbuds With... </p>
-            <p>8,258% funded</p>
-            <p>By Nura</p>
+            <p>'Menie: TRUMPED' </p>
+            <p>69% funded</p>
+            <p>By Alicia Bruce</p>
         </div>
         </div>
 
@@ -389,12 +443,12 @@
 
        <div id="three22">
         <div id="three22a">
-            <img src="https://external-ccu1-1.xx.fbcdn.net/emg1/v/t13/260525073941909375?url=https%3a%2f%2fksr-ugc.imgix.net%2fassets%2f037%2f919%2f891%2f334f906a92652a64cbe951fd1307c61a_original.png%3fixlib%3drb-4.0.2%26crop%3dfaces%26w%3d1552%26h%3d873%26fit%3dcrop%26v%3d1657543814%26auto%3dformat%26frame%3d1%26q%3d92%26s%3d82e945a246c3d91b527343b0c77fd483&fb_obo=1&utld=imgix.net&stp=c0.5000x0.5000f_dst-jpg_flffffff_p476x249_q75&ccb=13-1&oh=00_AT_c3BBydgACFQCBtoqzoz7fiRKDtAikj5KB4dJ9DYtsDw&oe=62DB2B9D&_nc_sid=c504da"/>
+            <img src="https://ksr-ugc.imgix.net/assets/037/835/932/3c3e7faea270e29f6d593eb7cd14a9ea_original.jpg?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1656806140&auto=format&frame=1&q=92&s=8acedd5373bcab461f065bfdc7215b5d"/>
            </div>
            <div id="three22b">
-               <p>Moon </p>
-               <p>1,011% funded</p>
-               <p>By Dave Clarke - Sinister Fish Games</p>
+               <p>The Flower Tower </p>
+               <p>25% funded</p>
+               <p>By By Phillip Pyle, II</p>
            </div> 
        </div>
 
@@ -402,12 +456,12 @@
 
        <div id="three23">
         <div id="three23a">
-            <img src="https://ksr-ugc.imgix.net/assets/037/853/835/834c74bd943c99c1645e3bfcb6435256_original.jpg?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1656986185&auto=format&frame=1&q=92&s=9942c86dada7c0aa5a1e6afc562822f5"/>
+            <img src="https://ksr-ugc.imgix.net/assets/037/874/198/3354cc076cc2f943085e3e38190844ab_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1657126223&auto=format&frame=1&q=92&s=bd46cf0a6fef51820cf117fdcdee7fae"/>
            </div>
            <div id="three23b">
-               <p>Bookish Ita Messenger Bag or Backpack </p>
-               <p>2,582% funded</p>
-               <p>By Kit Cronk</p>
+               <p>Onion (and other unusual frogs): Plushies & Pins </p>
+               <p>2,026% funded</p>
+               <p>By Laura</p>
            </div> 
        </div>
      </div>
@@ -416,50 +470,69 @@
 
     <hr>
 
-
+    <p id="fresh">FRESH FAVORITES  <a>Discover more ></a></p>
    <div id="four">
-   <div>
-    <img src="https://goodman-games.com/wp-content/uploads/2022/07/Zinequest4_header-1024x439.jpg"/>
-   </div>
-   <div>
-    <h1>Bring an RPG zin in life</h1>
-    <p>To participate, creators must launch a project for an unbound, folded, stapled, or saddle-stitched RPG zine on A5 (or smaller) paper, while backers can discover zine projects to pledge to. We'll be promoting projects throughout the month.</p>
-    <p>Read more</p>
-   </div>
+    <div>
+        <img src="https://ksr-ugc.imgix.net/assets/037/878/613/5bc5c9d7d39be0600ca63954ad34efe5_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657154303&auto=format&frame=1&q=92&s=ba9ab7296d7b8a62c5179300b41a2e96"/>
+        <h3>Bearing His Flowers</h3>
+        <p>A photobook by Stephanie Taiber published with Yoffy Press about vulnerability and strength.</p>
+        <h5>By Stephanie Taiber</h5>
+     </div>
+
+     <div>
+        <img src="https://ksr-ugc.imgix.net/assets/037/857/284/6d071c1c5393d21aec42fa5e15bfb462_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657019026&auto=format&frame=1&q=92&s=6f3b88e1ba9c01b02b248b2c4fcab351"/>
+        <h3>Together (A)part a photo book by Danny Burrows</h3>
+        <p>A study of the pacifist Christian Bruderhof community</p>
+        <h5>By GB Limited Editions</h5>
+     </div>
+
+     <div>
+        <img src="https://ksr-ugc.imgix.net/assets/037/911/658/a4ff59c2a96bdd706d7457847a9856d0_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657460066&auto=format&frame=1&q=92&s=f1a2519b0fefb59077e27ebc248d0d76"/>
+        <h3>THE FEARLESS GURKHAS</h3>
+        <p>WAR FROM THE NEPALESE WOMEN'S SIDE</p>
+        <h5>By Marissa Roth</h5>
+     </div>
+
+     <div>
+        <img src="https://ksr-ugc.imgix.net/assets/037/835/932/3c3e7faea270e29f6d593eb7cd14a9ea_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1656806140&auto=format&frame=1&q=92&s=e561ad896b0a99817919c09716cc60e7"/>
+        <h3>The Flower Tower</h3>
+        <p>An 18 foot tall sculpture of bicycles and flower baskets paying homage to Cleveland "Flower Man" Turner.</p>
+        <h5>By Phillip Pyle, II</h5>
+     </div>
    </div>
 
 
    <hr>
 
 
-    <p id="fresh">FRESH FAVORITES   <a>Discover more ></a></p>
+    <p id="fresh">TAKING OFF   <a>Discover more ></a></p>
    <div id="six">
      <div>
-        <img src="https://ksr-ugc.imgix.net/assets/037/912/367/eb830a1a1e936ae77c789be84474aa5e_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657467512&auto=format&frame=1&q=92&s=db415ab5cea9897e8475e5db81366616"/>
-        <h3>Uncanny Magazine, Year 9: To Fifty ... and Beyond!</h3>
-        <p>Funding to support Year 9 of Hugo Award winning Uncanny Magazine. We have more stories to tell together!</p>
-        <h5>By Lynne M. Thomas</h5>
+        <img src="https://ksr-ugc.imgix.net/assets/037/771/606/450413fc9787cad5c283eddc52eb9a26_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1656330315&auto=format&frame=1&q=92&s=818cfbd7e4c1b8683d4f2e622333fe48"/>
+        <h3>'Menie: TRUMPED'</h3>
+        <p>A photobook about a Scottish coastal community and land impacted by Trump's plans to build "The Greatest Golf Course in the World"</p>
+        <h5>By Alicia Bruce</h5>
      </div>
 
      <div>
-        <img src="https://ksr-ugc.imgix.net/assets/037/693/037/f16491c3d2d35064f30d7b4e458dee41_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1655632947&auto=format&frame=1&q=92&s=16182fb5b426ee23bac7f02419b5cf57"/>
-        <h3>The Wayward Writer</h3>
-        <p>Ariel Gore invites you to write your ideal world into being and join her School for Wayward Writers.</p>
-        <h5>By Microcosm Publishing</h5>
+        <img src="https://ksr-ugc.imgix.net/assets/037/878/613/5bc5c9d7d39be0600ca63954ad34efe5_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657154303&auto=format&frame=1&q=92&s=ba9ab7296d7b8a62c5179300b41a2e96"/>
+        <h3>Bearing His Flowers</h3>
+        <p>A photobook by Stephanie Taiber published with Yoffy Press about vulnerability and strength.</p>
+        <h5>By Stephanie Taiber</h5>
      </div>
 
      <div>
-        <img src="https://ksr-ugc.imgix.net/assets/037/959/607/1438d472c0e3a2b941f172857937e9a8_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657831370&auto=format&frame=1&q=92&s=8d21e15053f12cb944ddfe9daa1708bd"/>
-        <h3>HOT & MESSY: THE ART OF AMANDA CONNER ART BOOK HC</h3>
-        <p>Superstar AMANDA CONNER (The Pro, Harley Quinn, Before Watchmen and more) publishes this rare collection of Mature artistic drawings!</p>
-        <h5>By PaperFilms</h5>
+        <img src="https://ksr-ugc.imgix.net/assets/037/857/284/6d071c1c5393d21aec42fa5e15bfb462_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657019026&auto=format&frame=1&q=92&s=6f3b88e1ba9c01b02b248b2c4fcab351"/>
+        <h3>Together (A)part a photo book by Danny Burrows</h3>
+        <p>A study of the pacifist Christian Bruderhof community</p>
+        <h5>By GB Limited Editions</h5>
      </div>
 
      <div>
-        <img src="https://ksr-ugc.imgix.net/assets/037/804/986/16aad559a975d151a210a92ee650577b_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1656550481&auto=format&frame=1&q=92&s=2a106a926e68b329e6d8208a4f35e4af"/>
-        <h3>Unstuck in Time: The Kurt Vonnegut Suite</h3>
-        <p>Vibrant and colorful chamber-jazz music inspired by Kurt Vonnegut's beloved works, from Slaughterhouse Five to Cat's Cradle and beyond.</p>
-        <h5>By Jason Yeager</h5>
+        <img src="https://ksr-ugc.imgix.net/assets/037/515/707/956810a0da1aa238ed0c1a42286725ae_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1654132901&auto=format&frame=1&q=92&s=bfd437810bfb42540eb490aa08fff736"/>
+        <h3>ECHO Immersion - Episode 1: Into The Unknown</h3>
+        <p>An immersive experience about the impact of the Trans Atlantic Slave Trade, anti-blackness, and racialized violence.</p>
+        <h5>By Brigette Dunn Korpela</h5>
      </div>
    </div>
 
@@ -467,12 +540,17 @@
 
    <div id="five">
     <div>
-     <img src="https://ksr-ugc.imgix.net/assets/037/636/897/9c7333339f65acf38a139d1f514ca7d3_original.png?ixlib=rb-4.0.2&w=700&fit=max&v=1655182845&gif-q=50&lossless=true&s=197a22f5380b4b364462189008114b97"/>
+     <img src="https://ksr-ugc.imgix.net/assets/032/442/115/9e32d56e2faf52175682ccb57c5bd2b3_original.jpg?ixlib=rb-4.0.2&w=700&fit=max&v=1613767170&gif-q=50&q=92&s=e966330b72ad19467e9b23139514d35e"/>
+     <h1>How To Build Your Kickstarter Arts Campaign</h1>
+     <p>Tactical and emotional support for creating every aspect of your project page.</p>
+     <p>Learn more.</p>
     </div>
+
     <div>
-     <h1>Meet Kickstarter’s Community Advisory Council</h1>
-     <p>The Kickstarter community will provide insight across a range of creative displine and help us to identify issues,questions, and oppurtunities we may not be able to see on our own.</p>
-     <p>Meet our Council</p>
+        <img src="https://ksr-ugc.imgix.net/assets/032/441/983/6c91302b17d35fd12f683fed2cfd9b35_original.jpeg?ixlib=rb-4.0.2&w=700&fit=max&v=1613766660&gif-q=50&q=92&s=b76b718ff5589f564a16516daec3a959"/>
+        <h1>How To Build Your Kickstarter Art Community</h1>
+        <p>Avoiding the bystander effect, making the most of the bandwagon effect, and all-around good advice on getting support for your project.</p>
+        <p>Learn more.</p>  
     </div>
     </div>
 
@@ -480,34 +558,34 @@
     <hr>
 
 
-    <p id="fresh">TAKING OFF   <a>Discover more ></a></p>
+    <p id="fresh">HOME STRETCH   <a>Discover more ></a></p>
    <div id="seven">
      <div>
-        <img src="https://ksr-ugc.imgix.net/assets/038/002/147/11e8d1209372b7ff513b3c0b413df053_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658221509&auto=format&frame=1&q=92&s=aff415ce3b3cea297a00e16480515a06"/>
-        <h3>Moonrakers: Titan</h3>
-        <p>Explore the Moonrakers universe once again with 3 new expansions, a digital co-op game mode, big box, and exclusive holographic cards.</p>
-        <h5>By IV Studios</h5>
+        <img src="https://ksr-ugc.imgix.net/assets/037/366/803/bfb7205423bb36dda97a86513e021ae4_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1652982933&auto=format&frame=1&q=92&s=da383b140bec601e6b2eeb04971c1bc5"/>
+        <h3>Intermission</h3>
+        <p>Join us in growing artist visibility and income streams by expanding the realm of DE&I to include art.</p>
+        <h5>By Intermission</h5>
      </div>
 
      <div>
-        <img src="https://ksr-ugc.imgix.net/assets/038/003/206/1c18e5a164153286537e7a73c3fb7ea6_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658229384&auto=format&frame=1&q=92&s=fe41cbedf2a13b430e1abf7c29f45a98"/>
-        <h3>Aquamarine</h3>
-        <p>Explore the ocean depths in this print at home game from the creators of Voyages.</p>
-        <h5>By Postmark Games</h5>
+        <img src="https://ksr-ugc.imgix.net/assets/037/877/500/3e89a3253fd6206b8df41ab3fd3b398d_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657145179&auto=format&frame=1&q=92&s=aba1f636bc5febb2e6e26acc32505377"/>
+        <h3>ANATOMY OF A NIGHT a dance show by Nick Nikolaou</h3>
+        <p>An evening of dancing premiering on September 20th-24th in the Complex; a love letter to the queers, the weirdoes, the trailblazers</p>
+        <h5>By Nick Nikolaou</h5>
      </div>
 
      <div>
-        <img src="https://ksr-ugc.imgix.net/assets/038/027/831/9a495dc9fd57a918f4cda4671a558945_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658403765&auto=format&frame=1&q=92&s=e00e7004b5d1c29355af393d9a3575df"/>
-        <h3>Steinhardt's Guide to the Eldritch Hunt: A 5e Supplement</h3>
-        <p>A Soulsborne and Lovecraft inspired setting for DnD 5e. Fight Nightmarish Monsters, Survive the Madness, and Join The Hunt!</p>
-        <h5>By MonkeyDM</h5>
+        <img src="https://ksr-ugc.imgix.net/assets/037/451/593/050698d4f8296dd522c657f2c4778bc7_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1653622665&auto=format&frame=1&q=92&s=47e5585c2f3956f1d3f6e39c8b3e5c75"/>
+        <h3>Jade: The Quarterlife Crisis</h3>
+        <p>A mini audio drama series created by East & Southeast Asian independent artists.</p>
+        <h5>By Victoria Chen</h5>
      </div>
 
      <div>
-        <img src="https://ksr-ugc.imgix.net/assets/037/960/368/88ef9baf21f8a907ebb69d17dee29047_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657836542&auto=format&frame=1&q=92&s=1abde6a627032f2228fc124bbf2c0e70"/>
-        <h3>Skies of Fire: Collected Edition</h3>
-        <p>Deluxe hardback editions of Vincenzo Ferriero and Ray Chou's dieselpunk airship adventure comic, in its entirety for the first time.</p>
-        <h5>By Ray Chou</h5>
+        <img src="https://ksr-ugc.imgix.net/assets/037/771/606/450413fc9787cad5c283eddc52eb9a26_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1656330315&auto=format&frame=1&q=92&s=818cfbd7e4c1b8683d4f2e622333fe48"/>
+        <h3>'Menie: TRUMPED'</h3>
+        <p>A photobook about a Scottish coastal community and land impacted by Trump's plans to build "The Greatest Golf Course in the World"</p>
+        <h5>By Alicia Bruce</h5>
      </div>
    </div>
 
@@ -516,27 +594,57 @@
    <hr>
 
 
-    <p id="fresh">INTERVIEWS FROM THE CREATIVE INDEPENDENT</p>
+   <p id="fresh">EXPLORE ART   <a>Discover more ></a></p>
    <div id="eight">
-     <div>
-        <img src="https://s3.amazonaws.com/tci-assets/uploads/ocean1.jpg"/>
-        <p>Author Ocean Vuong on being generous in your work</p>     
+    <div>
+        <img src="https://ksr-ugc.imgix.net/assets/037/835/932/3c3e7faea270e29f6d593eb7cd14a9ea_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1656806140&auto=format&frame=1&q=92&s=e561ad896b0a99817919c09716cc60e7"/>
+        <h1>Planning Your Photobook or Art Book</h1>
+        <p>Thinking of creating a photobook or art book? Here's our advice on handling budgets, printing, distribution, and more.</p>
+        <p>Learn more.</p>
+       </div>
+   
+       <div>
+           <img src="https://ksr-ugc.imgix.net/assets/032/441/849/6b8b93f9cda9dddc3f1a5f1be63a8e16_original.jpeg?ixlib=rb-4.0.2&w=700&fit=max&v=1613765944&gif-q=50&q=92&s=aa688162b20c4415f0f2c4c711177cb3"/>
+           <h1>How To Make a Photography Portfolio</h1>
+           <p>An insider’s guide to getting your work out there—whether that’s through a website, PDF, or whole photo book.</p>
+           <p>Learn more.</p>  
+       </div>
+   </div>
+
+
+   <hr>
+
+
+   <p id="fresh">EXPLORE ART   <a>Discover more ></a></p>
+   <div id="nine">
+    <div>
+        <img src="https://ksr-ugc.imgix.net/assets/037/835/932/3c3e7faea270e29f6d593eb7cd14a9ea_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1656806140&auto=format&frame=1&q=92&s=e561ad896b0a99817919c09716cc60e7"/>
+        <h3>The Flower Tower</h3>
+        <p>An 18 foot tall sculpture of bicycles and flower baskets paying homage to Cleveland "Flower Man" Turner.</p>
+        <h5>By Phillip Pyle, II</h5>
      </div>
 
      <div>
-        <img src="https://cdn.filestackcontent.com/CQH9UGSuRie7XhXefFio"/>
-       <p>Musician and writer Michelle Zauner on finding ways to keep going</p>
+        <img src="https://ksr-ugc.imgix.net/assets/038/008/838/3de43522b20ab3a5a5bf1dddb670d650_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1658260115&auto=format&frame=1&q=92&s=0b9c76d9f8bb336fafcbf01b620d3185"/>
+        <h3>The Art of Ariel Olivetti</h3>
+        <p>Join superstar artist, Ariel Olivetti, as he creates a new art book with his best art for Marvel, DC Comics, Dark Horse, and more!</p>
+        <h5>By StoneBot Comic Books</h5>
      </div>
 
      <div>
-        <img src="https://s3.amazonaws.com/tci-assets/uploads/tself.jpg"/>
-        <p>Visual Artist Tschabalala Self on not being afraid of hard work</p>
+        <img src="https://ksr-ugc.imgix.net/assets/037/971/708/7ae01d75c0e6246e4173229f4beb1d43_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657926185&auto=format&frame=1&q=92&s=94876fe72b95b29a3f1a87bed4ab131f"/>
+        <h3>How to Draw Adorable: Drawing Book!</h3>
+        <p>This 160-page art book is full of joyful lessons on how to draw irresistible faces, animals, and everyday cute stuff in YOUR own style.</p>
+        <h5>By Carlianne</h5>
      </div>
 
      <div>
-        <img src="https://cdn.filestackcontent.com/ccKVd36lRKKtdsfnwVbs"/>
-       <p>Composer Danny Elfman on not being afraid of failure</p>
+        <img src="https://ksr-ugc.imgix.net/assets/037/956/277/09cf34f96860a7f9dc846658a343f3da_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1657811615&auto=format&frame=1&q=92&s=d784ae16a7d0902c860f7e6605e66245"/>
+        <h3>Dragons of Deep Time.</h3>
+        <p>A Bestiary of Ancient Dragons.</p>
+        <h5>By Andy Frazer</h5>
      </div>
+
    </div>
 
 
