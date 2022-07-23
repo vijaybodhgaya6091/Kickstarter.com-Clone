@@ -51,11 +51,9 @@ form {
         padding:0px 20px 20px 20px;
     }
 
- day-3
-    #navbar>div:nth-child(4)>a>img{
 
-    #navbar>div:nth-child(4)>img{
- main
+    #navbar>div:nth-child(4)>a>img{
+ 
         width:100%;   
     }
     
@@ -140,9 +138,10 @@ form {
     border: 0px;
 }
 
- day-3
+
 #read{
     color:blue;
+}
 
 #reading{
     color:rgb(170, 167, 167);
@@ -150,7 +149,6 @@ form {
 
 #read{
     color: rgb(115, 115, 209);
- main
     margin-bottom: 20px;
 }
 
@@ -161,11 +159,8 @@ form {
 }
 
 #second>p>a{
- day-3
     color:blue;
-
     color: rgb(115, 115, 209);
- main
     text-decoration: none;
 }
 
@@ -173,9 +168,10 @@ form {
     margin:20px;
 }
 
- day-3
+
 #last>p>a{
-    color: blue;  
+    color: blue;
+}  
 
 #last>p{
     color:rgb(170, 167, 167);
@@ -183,7 +179,6 @@ form {
 
 #last>p>a{
     color: rgb(115, 115, 209);  
- main
 }
 
 #secondlast{
@@ -224,11 +219,7 @@ form {
         <div>Discover</div>
         <div>Start a project</div>
         <div></div>
- day-3
         <div><a href="C:\Users\vijay_000\humane-governor-8062\homepage.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwRaZack5S9mFsbmJpK2LQ3jwYNpFO9X2VWdW__LC4m336KJ1-ILTz19OhAc48KUXXhw&usqp=CAU"/></a></div>
-
-        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwRaZack5S9mFsbmJpK2LQ3jwYNpFO9X2VWdW__LC4m336KJ1-ILTz19OhAc48KUXXhw&usqp=CAU"/></div>
- main
         <div></div>
         <div>Search <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVEQNqvjfiehB4K5TcJp3c95vw6tiPYfeQBg&usqp=CAU"/></div>
         <div><a href="C:\Users\vijay_000\humane-governor-8062\Login.html">Log in</a></div>
@@ -318,6 +309,36 @@ form {
    
 </body>
 <script>
+document.querySelector("form").addEventListener("submit",signingin);
+           let arr=JSON.parse(localStorage.getItem("list"))||[];
+
+            function signingin()
+            {
+             event.preventDefault();
+             let obj={
+            personemail2:document.querySelector("#email").value,
+            personpassword2:document.querySelector("#password").value,
+          }
+          let flag=false;
+          for(let i=0;i<arr.length;i++)
+          {
+            let char=arr[i];
+            if(char.personemail==obj.personemail2 && char.personpassword==obj.personpassword2)
+            {
+                flag=true;
+            }
+          }
+          if(flag==true)
+          {
+            alert("You are successfully Logged In");
+            window.location.href='homepage.html';
+          }
+          else
+          {
+            alert("Wrong Credential");
+          }
+            
+        }
 
 
 
